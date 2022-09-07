@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  width: 352px;
+  height: 198px;
+  margin: 0 auto;
+  outline: 1px solid #fff;
+  /* 
+    - scale: every pixel on the screen is multiplied
+        - the content is scaled from the middle cutting off the top of the content
+    - translateY: moves down the conatiner
+  */
+  transform: scale(3) translateY(50%);
+}
+
+.game-container canvas {
+  /* Tells the browser to evenly multilpy all of the pixels */
+  image-rendering: pixelated;
+}
